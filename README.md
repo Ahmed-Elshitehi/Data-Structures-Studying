@@ -6,7 +6,7 @@ And there is the total number of problems while I'm studying this core ( 0 )  I'
 
 ## Step zero 
 ### First of all I have two questions **what is Data Structure ?** And **Why do I want to study Data Structure?**<br>
-#### ***What is Date Structure ?*** 
+#### ***What is Data Structure ?*** 
 >  A data structure is a way of organizing data in the computer memory that we can use effectively.
 #### ***Why do I want to study Data Structure?*** 
 
