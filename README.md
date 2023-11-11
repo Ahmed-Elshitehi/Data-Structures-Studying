@@ -24,3 +24,8 @@ And there is the total number of problems while I'm studying this core ( 0 )  I'
 >  >  We will learn about the Implementation of the basic data structures. <br>
 >  >  Now you may have another question Why should I know something like that in case I can use the built-in data structure like STL in C++?<br>
 >  >  I will ask you a question what is better using these black boxes or knowing the implementation of them and having the ability to build your own data structure?<br>
+
+### Do you know any data structure?
+> The answer is **YES** you know the **array**
+#### Array Data Structure
+
