@@ -28,4 +28,4 @@ And there is the total number of problems while I'm studying this core ( 0 )  I'
 ### Do you know any data structure?
 > The answer is **YES** you know the **array**
 #### Array Data Structure
-
+>An array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together. This makes it easier to calculate the position of each element by simply adding >an offset to a base value, i.e., the memory location of the first element of the array (generally denoted by the name of the array).
