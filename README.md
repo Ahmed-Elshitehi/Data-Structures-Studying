@@ -1,6 +1,7 @@
 # Data-Structures-Studying
 
 I will do my best to make this a good reference for Anybody to study Data Structures I will split it into several steps. <br>
+The first thing in every step I will recommend for you resources to study from But please keep reading I think you will have a very good background before starting. <br>
 And there is the total number of problems while I'm studying this core ( 0 )  I'm sure you can do better than me.<br>
 ## - [**Step zero**](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/edit/main/README.md#step-zero)
 ## - [**Step One (vector)**](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/edit/main/README.md#step-one-vector)
@@ -31,6 +32,13 @@ And there is the total number of problems while I'm studying this core ( 0 )  I'
 >An array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together. This makes it easier to calculate the position of each element by simply adding >an offset to a base value, i.e., the memory location of the first element of the array (generally denoted by the name of the array).
 
 ## Step One (vector)
+### recommended resources to study I can't cover everything :(
+> - Arabic Competitive Programming (DR.Mustafa Saad) **(Arabic)**
+>  > - [Vector - 1 Intro](https://www.youtube.com/results?search_query=vector+data+structure)
+>  > - [Vector - 2 Appending operation](https://www.youtube.com/watch?v=sSXmes20AOc)
+>  > - [Vector - 3 Capacity Trick](https://www.youtube.com/watch?v=MM2-h-naowE)
+>  > - [Vector - 4 Insertion (Arabic)](https://www.youtube.com/watch?v=wmzmEuOtKRI)<br>
+
 
 We talked about the most simple data structure The array data structure, But it's easy to see that the array is so limited by its initial size.<br>
 >When the size is determined, it is fixed.
@@ -38,3 +46,22 @@ We talked about the most simple data structure The array data structure, But it'
 So we need something more flexible. <br>
 let's create our own dynamic array and we will call it vector.
 > similar to STL Vector class in c++.
+>  > If you don't know what is vector I recommend watching one of these videos :
+>  > > - [take U forward](https://youtu.be/RRVYpIET_RU?si=dLR169cAO1i9OVub) at 10:04
+>  > > - [Elzero Web School](https://www.youtube.com/watch?v=55MRxgVOkMo&pp=ygUVdmVjdG9yIGRhdGEgc3RydWN0dXJl) (Arabic)
+>  > > - [Adel Nasim](https://www.youtube.com/watch?v=AMnultLTdlI&t=903s) (Arabic)
+>  > > - [Knowledge Center](https://youtu.be/je7zlYfJf7Q?si=o_7H1mkHztFeb-L_).
+
+Now what we need in our class ??<br>
+....... We need Data and operations;
+- I will talk about some Operations first .... We have some basic operations :
+> - set data
+> - get data
+> - insert data
+> - delete data
+> - find data by index <br>
+
+- For data : we can store our data in array but wait wa said that array is limited so I will use dynamic array
+> - How to do that? I will use pointers,  int* which will point to an array and when I need another array I will make the poiner point to it.
+
+I think Now you have a good back ground about vector and how our implementation will be So after you finish take a look at [my code](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/tree/main/vector) I think It would be helpful.
