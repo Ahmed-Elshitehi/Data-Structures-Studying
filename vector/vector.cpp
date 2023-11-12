@@ -6,12 +6,17 @@
 #include <iostream>
 using namespace std;
 
-vector::vector(int n = 0, int v = 0) : size(max(0, n)), capacity(max(0, n)) {
+vector::vector(int n, int v) : size(max(0, n)), capacity(max(0, n)) {
     arr = new int[capacity];
     for (int i = 0; i < size; ++i) {
         arr[i] = v;
     }
 }
+vector::vector() : vector(0, 0) {
+}
+vector::vector(int n) : vector(n, 0) {
+}
+
 void vector::expand_capacity() {
     capacity = capacity * 2;
     capacity = max(capacity, 1);
@@ -52,9 +57,22 @@ void vector::print() {
         cout << arr[i] << ' ';
     }
 }
-
-vector::vector() : vector(0, 0) {
+void vector::insert(int value, int idx) {
+    if (size == capacity) {
+        expand_capacity();
+    }
+    // if idx > size so this value will be in the end in my vector
+    arr[size++] = value;
+    for (int i = size - 2; i >= idx; i--) {
+        swap(arr[i], arr[i + 1]);
+    }
 }
 
-vector::vector(int n) : vector(n, 0) {
+void vector::erase(int idx) {
+    if (idx >= size) return;
+
+    size--;
+    for (int i = idx; i < size; ++i) {
+        arr[i] = arr[i + 1];
+    }
 }

@@ -20,6 +20,8 @@ public:
     int &operator[](int i);
     const int front();
     const int back();
+    void insert(int value, int idx);
+    void erase(int idx);
     void print();
 };
 
