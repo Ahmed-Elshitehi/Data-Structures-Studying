@@ -4,7 +4,7 @@ I will do my best to make this a good reference for Anybody to study Data Struct
 The first thing in every step I will recommend for you resources to study from But please keep reading I think you will have a very good background before starting. <br>
 And there is the total number of problems while I'm studying this core ( 0 )  I'm sure you can do better than me.<br>
 - Step zero
-- Step One (vector)
+- [Step One (vector)](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/blob/main/README.md#step-one-vector)
 ## Step zero 
 ### First of all I have two questions **what is Data Structure ?** And **Why do I want to study Data Structure?**<br>
 #### ***What is Data Structure ?*** 
