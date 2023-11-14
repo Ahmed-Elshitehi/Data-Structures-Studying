@@ -3,8 +3,8 @@
 I will do my best to make this a good reference for Anybody to study Data Structures I will split it into several steps. <br>
 The first thing in every step I will recommend for you resources to study from But please keep reading I think you will have a very good background before starting. <br>
 And there is the total number of problems while I'm studying this core ( 0 )  I'm sure you can do better than me.<br>
-- Step zero
-- [Step One (vector)](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/blob/main/README.md#step-one-vector)
+## - [**Step zero**](Step-zero)
+## - [**Step One (vector)**](Step-One-vector)
 ## Step zero 
 ### First of all I have two questions **what is Data Structure ?** And **Why do I want to study Data Structure?**<br>
 #### ***What is Data Structure ?*** 
@@ -45,7 +45,7 @@ We talked about the most simple data structure The array data structure, But it'
 >So we aren't able to insert or remove elements that affect the size
 So we need something more flexible. <br>
 let's create our own dynamic array and we will call it vector.
-> similar to STL Vector class in c++.
+> similar to STL Vector class in C++.
 >  > If you don't know what is vector I recommend watching one of these videos :
 >  > > - [take U forward](https://youtu.be/RRVYpIET_RU?si=dLR169cAO1i9OVub) at 10:04
 >  > > - [Elzero Web School](https://www.youtube.com/watch?v=55MRxgVOkMo&pp=ygUVdmVjdG9yIGRhdGEgc3RydWN0dXJl) (Arabic)
@@ -61,7 +61,7 @@ Now what we need in our class ??<br>
 > - delete data
 > - find data by index <br>
 
-- For data : we can store our data in array but wait wa said that array is limited so I will use dynamic array
-> - How to do that? I will use pointers,  int* which will point to an array and when I need another array I will make the poiner point to it.
+- For data: we can store our data in an array but wait wa said that array is limited so I will use a dynamic array
+> - How to do that? I will use pointers,  int* which will point to an array and when I need another array I will make the point point to it.
 
-I think Now you have a good back ground about vector and how our implementation will be So after you finish take a look at [my code](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/tree/main/vector) I think It would be helpful.
+I think Now you have a good background about vector and how our implementation will be So after you finish take a look at [my code](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/tree/main/vector) I think It would be helpful.
