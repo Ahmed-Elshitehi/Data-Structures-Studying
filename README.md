@@ -64,4 +64,4 @@ Now what we need in our class ??<br>
 - For data: we can store our data in an array but wait wa said that array is limited so I will use a dynamic array
 > - How to do that? I will use pointers,  int* which will point to an array and when I need another array I will make the point point to it.
 
-I think Now you have a good background about vector and how our implementation will be So after you finish take a look at [my code](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/tree/main/vector) I think It would be helpful.
+I think Now you have a good background about vector and how our implementation will be So after you finish take a look at [my code](/vector) I think It would be helpful.
