@@ -1,13 +1,22 @@
 # Data-Structures-Studying
 
 I will do my best to make this a good reference for Anybody to study Data Structures I will split it into several steps. <br>
-The first thing in every step I will recommend for you resources to study from But please keep reading I think you will have a very good background before starting. <br>
-And there is the total number of problems while I'm studying this core ( 0 )  I'm sure you can do better than me.<br>
-## - [**Step zero**](#Step-zero)
-## - [**Step One (vector)**](#Step-One-vector)
+The first thing in every step I will recommend for you a resources to study from. and I will try to write a good explanation and solve with you some problems. <br>
+### recommended resources to study
+> - [mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+> - [ Arabic Competitive Programming](https://www.youtube.com/playlist?list=PLPt2dINI2MIZX2EtY81WI-lDkvhKziLKM)**(Arabic)** DR.Mustafa Saad
+> - [Mega Code](https://www.youtube.com/playlist?list=PLsGJzJ8SQXTcsXRVviurGei0lf_t_I4D8)**(Arabic)**
+> - 
+## - [**Step zero**](#Step-zero)✅
+## - [**Step One (vector)**](#Step-One-vector)✅
+## - [**Step Two (Single Linked list)**](#Step-Two-Single-Linked-list)⏳
 ## Step zero 
+
+
 ### First of all I have two questions **what is Data Structure ?** And **Why do I want to study Data Structure?**<br>
 #### ***What is Data Structure ?*** 
+> - [Data Structures - What and Why](https://www.youtube.com/watch?v=N-vU8VZ5ukA&list=PLPt2dINI2MIZX2EtY81WI-lDkvhKziLKM&index=1&pp=iAQB)**(Arabic)** DR.Mustafa Saad
+> - [What Are Data Structures?](https://www.youtube.com/watch?v=bum_19loj9A) CS Dojo
 >  A data structure is a way of organizing data in the computer memory that we can use effectively.
 #### ***Why do I want to study Data Structure?*** 
 
@@ -32,12 +41,6 @@ And there is the total number of problems while I'm studying this core ( 0 )  I'
 >An array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together. This makes it easier to calculate the position of each element by simply adding >an offset to a base value, i.e., the memory location of the first element of the array (generally denoted by the name of the array).
 
 ## Step One (vector)
-### recommended resources to study I can't cover everything :(
-> - Arabic Competitive Programming (DR.Mustafa Saad) **(Arabic)**
->  > - [Vector - 1 Intro](https://www.youtube.com/results?search_query=vector+data+structure)
->  > - [Vector - 2 Appending operation](https://www.youtube.com/watch?v=sSXmes20AOc)
->  > - [Vector - 3 Capacity Trick](https://www.youtube.com/watch?v=MM2-h-naowE)
->  > - [Vector - 4 Insertion (Arabic)](https://www.youtube.com/watch?v=wmzmEuOtKRI)<br>
 
 
 We talked about the most simple data structure The array data structure, But it's easy to see that the array is so limited by its initial size.<br>
@@ -61,7 +64,21 @@ Now what we need in our class ??<br>
 > - delete data
 > - find data by index <br>
 
-- For data: we can store our data in an array but wait wa said that array is limited so I will use a dynamic array
-> - How to do that? I will use pointers,  int* which will point to an array and when I need another array I will make the point point to it.
+- For data: we can store our data in an array but wait wa said that the array is limited so I will use a dynamic array
+> - How to do that? I will use pointers,  int* which will point to an array and when I need another array I will make the pointer point to it and store data in the new array, and then ${\color{red}Delete}$ the old array.
 
 I think Now you have a good background about vector and how our implementation will be So after you finish take a look at [my code](/vector) I think It would be helpful.
+
+## Step Two (Single Linked list)
+First of all we need to remember some things about array and vector
+> - Array is static. You can’t delete/insert/expand
+> - Vector was our way to get a dynamic array
+but if we ant to add a new element in the vector and ther is no free place we will take a new array and copy all the data = O(N).<br>
+So what if I want to just add the new element and I don't want to care about the size of the array? now we can talk about linked list.
+
+| Problem  | Level | Solved | My code |
+| ------------- | ------------- | ------------- | ------------- |
+| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)  | ${\color{green}Easy}$  |  ✅| |
+| [Merge Two Sorted Lists ](https://leetcode.com/problems/merge-two-sorted-lists/)  | ${\color{green}Easy}$  |  ✅| |
+| [Linked List Cycle ](https://leetcode.com/problems/linked-list-cycle/)  | ${\color{green}Easy}$  |  ✅| |
+| [Remove Nth Node From End of List ](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)  | ${\color{yellow}Medium}$  |  ✅| |
