@@ -79,8 +79,8 @@ So what if I want to just add the new element and I don't want to care about the
 | Problem  | Level | Solved | My code |
 | ------------- | ------------- | ------------- | ------------- |
 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)  | ${\color{green}Easy}$  |  ✅| |
+| [Palindrome Linked List ](https://leetcode.com/problems/palindrome-linked-list/)  | ${\color{green}Easy}$  |  ✅| |
 | [Merge Two Sorted Lists ](https://leetcode.com/problems/merge-two-sorted-lists/)  | ${\color{green}Easy}$  |  ✅| |
 | [Linked List Cycle ](https://leetcode.com/problems/linked-list-cycle/)  | ${\color{green}Easy}$  |  ✅| |
 | [Remove Nth Node From End of List ](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Reorder List  ](https://leetcode.com/problems/reorder-list/)  | ${\color{yellow}Medium}$  |  ✅| |
-
