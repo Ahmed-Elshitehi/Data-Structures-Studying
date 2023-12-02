@@ -67,7 +67,7 @@ Now what we need in our class ??<br>
 - For data: we can store our data in an array but wait wa said that the array is limited so I will use a dynamic array
 > - How to do that? I will use pointers,  int* which will point to an array and when I need another array I will make the pointer point to it and store data in the new array, and then ${\color{red}Delete}$ the old array.
 
-I think Now you have a good background about vector and how our implementation will be So after you finish take a look at [my code](/vector) I think It would be helpful.
+I think Now you have a good background abohttps://media.geeksforgeeks.org/wp-content/cdn-uploads/20230726162542/Linked-List-Data-Structure.pngut vector and how our implementation will be So after you finish take a look at [my code](/vector) I think It would be helpful.
 
 ## Step Two (Single Linked list)
 First of all we need to remember some things about array and vector
@@ -75,6 +75,50 @@ First of all we need to remember some things about array and vector
 > - Vector was our way to get a dynamic array
 but if we ant to add a new element in the vector and ther is no free place we will take a new array and copy all the data = O(N).<br>
 So what if I want to just add the new element and I don't want to care about the size of the array? now we can talk about linked list.
+
+let's say that we have some variables how can we link them ??
+what if every element points to the next one.
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Linked-list-normal-image01.jpg" alt="single linked list" width="800" height="400">
+
+so the node is a structure contains data and pointer points to the next node 
+
+![image](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/assets/122414149/3a8a9f75-b4fa-4b8c-ba1b-c9c0f93be337)
+
+So in little words we can say that a linked list is just commection of some noodes and another important component *Head* pointer points to the first node and *Tail* points to the last Node.
+#### Traversal in a Singly Linked List
+  
+  Traversal means visiting each node of the linked list. and we need to traverse in the linked list to do operations like. <br>
+  - Insertion
+  - Deletion
+  - Display
+  - Search 
+     
+  > - it's too easy to understand frim this simple code.
+  
+  ![image](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/assets/122414149/8ff3e1ae-f3f5-4b31-a773-47e85901f7b8
+
+#### Insertion in a Single Linked List
+
+whe we talked about Insertion We talk about three defrunt cases.
+
+1. Insertion at the beginning of the list
+
+2. Insertion after a particular node.
+
+3. Insertion at the end of the list
+
+##### 1. Insertion at the beginning:
+
+Insertion at the beginning means we will insert a node at the front of the list in the following way:
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Linked-list-normal-image02.jpg" alt="insert in single linked list" width="800" height="400">
+
+We can see that we have a linked list of the following elements: 10→20→30.
+
+Once we insert a new node at the beginning, the list will be 50→10→20→30.
+
+
 
 | Problem  | Level | Solved | My code |
 | ------------- | ------------- | ------------- | ------------- |
