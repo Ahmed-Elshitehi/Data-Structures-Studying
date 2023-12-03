@@ -9,7 +9,7 @@ The first thing in every step I will recommend for you a resources to study from
 > - 
 ## - [**Step zero**](#Step-zero)✅
 ## - [**Step One (vector)**](#Step-One-vector)✅
-## - [**Step Two (Single Linked list)**](#Step-Two-Single-Linked-list)⏳
+## - [**Step Two (Single Linked list)**](#Step-Two-Single-Linked-list)✅
 ## Step zero 
 
 
