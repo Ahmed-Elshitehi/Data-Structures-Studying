@@ -6,10 +6,13 @@ The first thing in every step I will recommend for you a resources to study from
 > - [mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
 > - [ Arabic Competitive Programming](https://www.youtube.com/playlist?list=PLPt2dINI2MIZX2EtY81WI-lDkvhKziLKM)**(Arabic)** DR.Mustafa Saad
 > - [Mega Code](https://www.youtube.com/playlist?list=PLsGJzJ8SQXTcsXRVviurGei0lf_t_I4D8)**(Arabic)**
-> - 
+
+
 ## - [**Step zero**](#Step-zero)✅
 ## - [**Step One (vector)**](#Step-One-vector)✅
 ## - [**Step Two (Single Linked list)**](#Step-Two-Single-Linked-list)✅
+## - [**Step Three (Double Linked list)**](#Step-Three-Double-Linked-list)⏳
+## - [**Step Four (Stack)**](#Step-Four-Stack)⏳
 ## Step zero 
 
 
@@ -195,3 +198,12 @@ and here is a list of some problems I solved.
 | [Reorder List  ](https://leetcode.com/problems/reorder-list/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Add Two Numbers ](https://leetcode.com/problems/add-two-numbers/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)  | ${\color{yellow}Medium}$  |  ✅| |
+
+
+## Step Three (Double Linked list)
+
+## Step Four (Stack)
+
+| Problem  | Level | Solved | My code |
+| ------------- | ------------- | ------------- | ------------- |
+| [Min Stack](https://leetcode.com/problems/min-stack/description/)  | ${\color{yellow}Medium}$  |  ✅| |
