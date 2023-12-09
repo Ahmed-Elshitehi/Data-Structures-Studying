@@ -216,6 +216,75 @@ and here is a list of some problems I solved.
 
 
 ## Step Three (Double Linked list)
+In singly linked list We have single pointer pointing to the next node.<br>
+But a doubly linked list contains two pointers. One pointer points to the next node and one pointer to the previous node.<br>
+
+Every node in a doubly linked list has :- 
+   - Data
+   - Address of the next node
+   - Address of the previous node
+
+```cpp
+struct node{
+    int data;
+    node *next;
+    node *pre;
+    node(int data = 0) : data(data), next(nullptr), pre(nullptr) {
+    }
+    ~node(){
+    }
+};
+```
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Doubly-linked-list-normla-image02-1.jpg" alt="Node in Double linked list" width="200" height="200">
+
+so we can represent Double linked list like this : 
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Doubly-linked-list-normla-image.jpg" alt="Double linked list" width="600" height="300">
+
+
+Now let's Talk about simple operations on double Linked list : -
+- Insertion
+- Deletion
+
+Insertion in a Linked List
+
+Insertion in a linked list occurs at three different positions:
+
+1. Insertion at the beginning of the list
+
+2. Insertion after a particular node.
+
+3. Insertion at the end of the list
+
+#### 1. Insertion at the beginning
+We insert a node at the beginning such that the next pointer points to the node which was at first before. The previous pointer points to NULL.
+
+![TechVidvan-Doubly-linked-list-normla-image04](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/assets/122414149/aac2f09d-0626-46c8-a9b3-e3652b8b1ffe)
+Here, we have tried to insert M at the beginning.
+```cpp
+void DoubleLinkedList::insert_front(int value) {
+    node *tmp = new node(value);
+    if (!head) {
+        head = tail = tmp;
+    } else {
+        link(tmp, head);
+        head = tmp;
+    }
+    length++;
+}
+```
+
+#### 2. Insertion after a particular node.
+Insertion after a particular node involves traversing all nodes before that node. We will make use of an extra pointer ‘temp’ for traversing the node up to a particular position.
+
+![TechVidvan-Doubly-linked-list-normla-image06](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/assets/122414149/e11a3e50-bfb7-4489-8d44-2b1d9d498b25)
+here we want to add a node  ‘M’ between node ‘B’ and node ‘C’.
+
+#### 3. Insertion at the end of the list
+If the list is empty, we will insert a node right after the Head. If the list is not empty, we first need to traverse the whole list to insert a node at the end of the list.
+
+
 
 ## Step Four (Stack)
 
