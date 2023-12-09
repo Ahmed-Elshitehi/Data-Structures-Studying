@@ -92,7 +92,16 @@ what if every element points to the next one?
 
 so the node is a structure that contains data and pointer points to the next node 
 
-![image](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/assets/122414149/3a8a9f75-b4fa-4b8c-ba1b-c9c0f93be337)
+```cpp
+struct node{
+    int data;
+    node *Next;
+    node(int data = 0) : data(data), Next(nullptr) {
+    }
+    ~node(){
+    }
+};
+```
 
 So in little words, we can say that a linked list is just a connection of some nodes, and another important component *Head* pointer points to the first node, and the *Tail* points to the last Node.
 #### Traversal in a Singly Linked List
@@ -105,7 +114,13 @@ So in little words, we can say that a linked list is just a connection of some n
      
   > - it's too easy to understand from this simple code.
   
-  ![image](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/assets/122414149/8ff3e1ae-f3f5-4b31-a773-47e85901f7b8)
+  ```c++
+node *ptr = head;
+    while (head != nullptr) {
+        std::cout << ptr->data << ' ';
+        ptr = ptr->Next;
+    }
+```
 
 ### Insertion in a Single Linked List
 
