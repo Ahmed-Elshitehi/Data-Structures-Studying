@@ -1,18 +1,17 @@
 #ifndef DATA_STRUCTURES_STUDYING_STACK_H
 #define DATA_STRUCTURES_STUDYING_STACK_H
-
-struct node{
-    int val;
-    node* next;
-    node(int v):val(v),next(nullptr){
-    }
-    node() {
-        node(0);
-    }
-    ~node()= default;
-};
 class stack {
 private:
+    struct node{
+        int val;
+        node* next;
+        node(int v):val(v),next(nullptr){
+        }
+        node() {
+            node(0);
+        }
+        ~node()= default;
+    };
     node *head;
     int length;
 public:
