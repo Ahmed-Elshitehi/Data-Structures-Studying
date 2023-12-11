@@ -54,13 +54,13 @@ void SingleLinkedList::delete_at(int n){ // time O(N), space O(1)
         delete_front();
     } else if (n == length) {
         delete_end();
-    }
-    node* temp = get_at(n); // to be deleted
-    node* prev = get_at(n - 1);
-    prev->Next = temp->Next;
-    delete temp;
-    length--;
-}
+    } else {
+        node* temp = get_at(n); // to be deleted
+        node* prev = get_at(n - 1);
+        prev->Next = temp->Next;
+        delete temp;
+        length--;
+    }}
 
 node *SingleLinkedList::get_at(int n) { // time O(N), space O(1)
     if (n <= 0 || n > length) {
@@ -86,8 +86,10 @@ int SingleLinkedList::find(int v) {// time O(N), space O(1)
 }
 
 void SingleLinkedList::print() {// time O(N), space O(1)
-    for (node *i = head; i != nullptr; i = i->Next) {
-        std::cout << i->data << ' ';
+    node *ptr = head;
+    while (head != nullptr) {
+        std::cout << ptr->data << ' ';
+        ptr = ptr->Next;
     }
 }
 

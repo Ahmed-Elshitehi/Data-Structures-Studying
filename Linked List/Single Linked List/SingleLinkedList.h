@@ -1,16 +1,16 @@
 #ifndef DATA_STRUCTURE_STUDYING_SINGLELINKEDLIST_H
 #define DATA_STRUCTURE_STUDYING_SINGLELINKEDLIST_H
 #include <iostream>
-struct node{
-    int data;
-    node *Next;
-    node(int data = 0) : data(data), Next(nullptr) {
-    }
-    ~node(){
-    }
-};
 class SingleLinkedList{
 private:
+    struct node{
+        int data;
+        node *Next;
+        node(int data = 0) : data(data), Next(nullptr) {
+        }
+        ~node(){
+        }
+    };
     node *head;
     node *tail;
     int length;

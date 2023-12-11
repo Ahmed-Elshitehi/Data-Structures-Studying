@@ -1,17 +1,16 @@
 #ifndef DATA_STRUCTURE_STUDYING_DOUBLELINKEDLIST_H
 #define DATA_STRUCTURE_STUDYING_DOUBLELINKEDLIST_H
-
-struct node{
-    int data;
-    node *next;
-    node *pre;
-    node(int data = 0) : data(data), next(nullptr), pre(nullptr) {
-    }
-    ~node(){
-    }
-};
 class DoubleLinkedList {
 private:
+    struct node{
+        int data;
+        node *next;
+        node *pre;
+        node(int data = 0) : data(data), next(nullptr), pre(nullptr) {
+        }
+        ~node(){
+        }
+    };
     node *head;
     node *tail;
     int length;
