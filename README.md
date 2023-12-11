@@ -92,7 +92,16 @@ what if every element points to the next one?
 
 so the node is a structure that contains data and pointer points to the next node 
 
-![image](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/assets/122414149/3a8a9f75-b4fa-4b8c-ba1b-c9c0f93be337)
+```cpp
+struct node{
+    int data;
+    node *Next;
+    node(int data = 0) : data(data), Next(nullptr) {
+    }
+    ~node(){
+    }
+};
+```
 
 So in little words, we can say that a linked list is just a connection of some nodes, and another important component *Head* pointer points to the first node, and the *Tail* points to the last Node.
 #### Traversal in a Singly Linked List
@@ -105,7 +114,13 @@ So in little words, we can say that a linked list is just a connection of some n
      
   > - it's too easy to understand from this simple code.
   
-  ![image](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/assets/122414149/8ff3e1ae-f3f5-4b31-a773-47e85901f7b8)
+  ```c++
+node *ptr = head;
+    while (head != nullptr) {
+        std::cout << ptr->data << ' ';
+        ptr = ptr->Next;
+    }
+```
 
 ### Insertion in a Single Linked List
 
@@ -201,8 +216,189 @@ and here is a list of some problems I solved.
 
 
 ## Step Three (Double Linked list)
+In singly linked list We have single pointer pointing to the next node.<br>
+But a doubly linked list contains two pointers. One pointer points to the next node and one pointer to the previous node.<br>
+
+Every node in a doubly linked list has :- 
+   - Data
+   - Address of the next node
+   - Address of the previous node
+
+```cpp
+struct node{
+    int data;
+    node *next;
+    node *pre;
+    node(int data = 0) : data(data), next(nullptr), pre(nullptr) {
+    }
+    ~node(){
+    }
+};
+```
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Doubly-linked-list-normla-image02-1.jpg" alt="Node in Double linked list" width="200" height="200">
+
+so we can represent Double linked list like this : 
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Doubly-linked-list-normla-image.jpg" alt="Double linked list" width="600" height="300">
+
+
+Now let's Talk about simple operations on double Linked list : -
+- Insertion
+- Deletion
+
+Insertion in a Linked List
+
+Insertion in a linked list occurs at three different positions:
+
+1. Insertion at the beginning of the list
+
+2. Insertion after a particular node.
+
+3. Insertion at the end of the list
+
+#### 1. Insertion at the beginning
+We insert a node at the beginning such that the next pointer points to the node which was at first before. The previous pointer points to NULL.
+
+![TechVidvan-Doubly-linked-list-normla-image04](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/assets/122414149/aac2f09d-0626-46c8-a9b3-e3652b8b1ffe)
+Here, we have tried to insert M at the beginning.
+```cpp
+void DoubleLinkedList::insert_front(int value) {
+    node *tmp = new node(value);
+    if (!head) {
+        head = tail = tmp;
+    } else {
+        link(tmp, head);
+        head = tmp;
+    }
+    length++;
+}
+```
+
+#### 2. Insertion after a particular node.
+Insertion after a particular node involves traversing all nodes before that node. We will make use of an extra pointer ‘temp’ for traversing the node up to a particular position.
+
+![TechVidvan-Doubly-linked-list-normla-image06](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/assets/122414149/e11a3e50-bfb7-4489-8d44-2b1d9d498b25)
+here we want to add a node  ‘M’ between node ‘B’ and node ‘C’.
+
+#### 3. Insertion at the end of the list
+If the list is empty, we will insert a node right after the Head. If the list is not empty, we first need to traverse the whole list to insert a node at the end of the list.
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Doubly-linked-list-normla-image05.jpg" alt="Double linked list" width="900" height="300">
+Here we are inserting M at the end.
+
+```cpp
+void insert_end(int value) {
+    node *tmp = new node(value);
+    if (!head) {
+        head = tail = tmp;
+    } else {
+        link(tail, tmp);
+        tail = tmp;
+    }
+    length++;
+}
+```
+
+Deletion also works in three different cases:
+
+1. Deletion from beginning
+
+2. Deleting a node other than the first and the last node
+
+3. Deletion at the end
+
+
+#### 1. Deletion from the beginning:
+
+It involves deleting the first node of the doubly linked list
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Doubly-linked-list-normla-image07.jpg" alt="Double linked list" width="900" height="300">
+
+```cpp
+void delete_front() {
+    if (!head) return;
+    head = head->next;
+    delete head->pre;
+    if (head)
+        head->pre = nullptr;
+    length--;
+    if (!length) {
+        tail = nullptr;
+    }
+}
+```
+
+#### 2.Deletion after a particular node:
+
+suppose we wish to delete node ‘C’ from the list having nodes: ‘A’, ‘B’, ‘C’ and ‘D’. Then, we will do it as follows:
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Doubly-linked-list-normla-image09.jpg" alt="Double linked list" width="900" height="300">
+
+```cpp
+void DoubleLinkedList::delete_at(int n) {
+    if (n == 1) {
+        delete_front();
+    } else if (n == length) {
+        delete_end();
+    } else {
+        node* temp = get_at(n); // to be deleted
+        node *pre = temp->pre;
+        node *nxt = temp->next;
+        pre->next = nxt;
+        nxt->pre = pre;
+        delete temp;
+        length--;
+    }
+}
+```
+
+#### 3. Deletion at the end:
+When the list has two or more nodes, we need to traverse the whole node and then delete the last node.
+
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Doubly-linked-list-normla-image08-1.jpg" alt="Double linked list" width="900" height="300">
+
+
+$NOTE :$ here if we have tail pointer we don't neet to traverse the whole nodes.
+
+```cpp
+void delete_end() {
+    if (!head) return;
+    tail = tail->pre;
+    delete tail->next;
+    if (tail)
+        tail->next = nullptr;
+    length--;
+    if (!length) {
+        head = nullptr;
+    }
+}
+```
+
+
 
 ## Step Four (Stack)
+
+### What is a Stack?
+
+A stack is a linear data structure. It works on LIFO(Last in first out) or FILO(First in last out) approach. A stack contains a pointer named ‘top’. This pointer points to the top of the stack.
+
+In stack, we can perform insertion and deletion operations at only one end i.e. at the top of the stack.
+
+
+![stack drawio2](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/assets/122414149/df1591b8-aa1b-4a1e-ba82-28a6b1ffae25)
+
+We can implement stack using array or using linked list 
+
+We will talk about stack as linked list. ( Try to implement stack uaing array by yourself :) )
+
+The linked list allocates memory dynamically. Thus, the stack will also have dynamic memory allocation.
+Since there is dynamic memory allocation, the use of heap comes into the picture.
+In the case of the linked list implementation, the stack will be considered full if the heap does not have enough space to create a new node.
+In a linked list, the last node points to NULL. if the stack is implemented using a linked list, its topmost node will point to NULL as well
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/Stack-normal-images04.jpg" alt="Stack">
 
 | Problem  | Level | Solved | My code |
 | ------------- | ------------- | ------------- | ------------- |
