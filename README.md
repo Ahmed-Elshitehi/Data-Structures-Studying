@@ -284,9 +284,121 @@ here we want to add a node  ‘M’ between node ‘B’ and node ‘C’.
 #### 3. Insertion at the end of the list
 If the list is empty, we will insert a node right after the Head. If the list is not empty, we first need to traverse the whole list to insert a node at the end of the list.
 
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Doubly-linked-list-normla-image05.jpg" alt="Double linked list" width="900" height="300">
+Here we are inserting M at the end.
+
+```cpp
+void insert_end(int value) {
+    node *tmp = new node(value);
+    if (!head) {
+        head = tail = tmp;
+    } else {
+        link(tail, tmp);
+        tail = tmp;
+    }
+    length++;
+}
+```
+
+Deletion also works in three different cases:
+
+1. Deletion from beginning
+
+2. Deleting a node other than the first and the last node
+
+3. Deletion at the end
+
+
+#### 1. Deletion from the beginning:
+
+It involves deleting the first node of the doubly linked list
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Doubly-linked-list-normla-image07.jpg" alt="Double linked list" width="900" height="300">
+
+```cpp
+void delete_front() {
+    if (!head) return;
+    head = head->next;
+    delete head->pre;
+    if (head)
+        head->pre = nullptr;
+    length--;
+    if (!length) {
+        tail = nullptr;
+    }
+}
+```
+
+#### 2.Deletion after a particular node:
+
+suppose we wish to delete node ‘C’ from the list having nodes: ‘A’, ‘B’, ‘C’ and ‘D’. Then, we will do it as follows:
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Doubly-linked-list-normla-image09.jpg" alt="Double linked list" width="900" height="300">
+
+```cpp
+void DoubleLinkedList::delete_at(int n) {
+    if (n == 1) {
+        delete_front();
+    } else if (n == length) {
+        delete_end();
+    } else {
+        node* temp = get_at(n); // to be deleted
+        node *pre = temp->pre;
+        node *nxt = temp->next;
+        pre->next = nxt;
+        nxt->pre = pre;
+        delete temp;
+        length--;
+    }
+}
+```
+
+#### 3. Deletion at the end:
+When the list has two or more nodes, we need to traverse the whole node and then delete the last node.
+
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Doubly-linked-list-normla-image08-1.jpg" alt="Double linked list" width="900" height="300">
+
+
+$NOTE :$ here if we have tail pointer we don't neet to traverse the whole nodes.
+
+```cpp
+void delete_end() {
+    if (!head) return;
+    tail = tail->pre;
+    delete tail->next;
+    if (tail)
+        tail->next = nullptr;
+    length--;
+    if (!length) {
+        head = nullptr;
+    }
+}
+```
+
 
 
 ## Step Four (Stack)
+
+### What is a Stack?
+
+A stack is a linear data structure. It works on LIFO(Last in first out) or FILO(First in last out) approach. A stack contains a pointer named ‘top’. This pointer points to the top of the stack.
+
+In stack, we can perform insertion and deletion operations at only one end i.e. at the top of the stack.
+
+
+![stack drawio2](https://github.com/Ahmed-Elshitehi/Data-Structures-Studying/assets/122414149/df1591b8-aa1b-4a1e-ba82-28a6b1ffae25)
+
+We can implement stack using array or using linked list 
+
+We will talk about stack as linked list. ( Try to implement stack uaing array by yourself :) )
+
+The linked list allocates memory dynamically. Thus, the stack will also have dynamic memory allocation.
+Since there is dynamic memory allocation, the use of heap comes into the picture.
+In the case of the linked list implementation, the stack will be considered full if the heap does not have enough space to create a new node.
+In a linked list, the last node points to NULL. if the stack is implemented using a linked list, its topmost node will point to NULL as well
+
+<img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/Stack-normal-images04.jpg" alt="Stack">
 
 | Problem  | Level | Solved | My code |
 | ------------- | ------------- | ------------- | ------------- |
