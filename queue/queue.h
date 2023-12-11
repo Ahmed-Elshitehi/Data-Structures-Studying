@@ -1,19 +1,17 @@
-
 #ifndef DATA_STRUCTURES_STUDYING_QUEUE_H
 #define DATA_STRUCTURES_STUDYING_QUEUE_H
-
-struct node{
-    int val;
-    node* next;
-    node(int v):val(v),next(nullptr){
-    }
-    node() {
-        node(0);
-    }
-    ~node()= default;
-};
 class queue {
 private:
+    struct node{
+        int val;
+        node* next;
+        node(int v):val(v),next(nullptr){
+        }
+        node() {
+            node(0);
+        }
+        ~node()= default;
+    };
     node *head;
     node *tail;
     int length;
