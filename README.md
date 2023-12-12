@@ -4,15 +4,20 @@ I will do my best to make this a good reference for Anybody to study Data Struct
 The first thing in every step I will recommend for you a resources to study from. and I will try to write a good explanation and solve with you some problems. <br>
 ### recommended resources to study
 > - [mycodeschool](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+> - [freeCodeCamp](https://www.youtube.com/watch?v=B31LgI4Y4DQ&t=146s&pp=ygULbGlua2VkIGxpc3Q%3D)
 > - [ Arabic Competitive Programming](https://www.youtube.com/playlist?list=PLPt2dINI2MIZX2EtY81WI-lDkvhKziLKM)**(Arabic)** DR.Mustafa Saad
 > - [Mega Code](https://www.youtube.com/playlist?list=PLsGJzJ8SQXTcsXRVviurGei0lf_t_I4D8)**(Arabic)**
+> - [Hard-Code](https://www.youtube.com/playlist?list=PLwCMLs3sjOY4UQq4vXgGPwGLVX1Y5faaS)**(Arabic)**
+> - [Adel Nasim](https://www.youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp)**(Arabic)**
 
 
 ## - [**Step zero**](#Step-zero)✅
 ## - [**Step One (vector)**](#Step-One-vector)✅
 ## - [**Step Two (Single Linked list)**](#Step-Two-Single-Linked-list)✅
-## - [**Step Three (Double Linked list)**](#Step-Three-Double-Linked-list)⏳
+## - [**Step Three (Double Linked list)**](#Step-Three-Double-Linked-list)✅
 ## - [**Step Four (Stack)**](#Step-Four-Stack)⏳
+## - [**Step Five (Binary Tree)**](#Step-Five-Binary-Tree)⏳
+
 ## Step zero 
 
 
@@ -74,6 +79,10 @@ I think Now you have a good background abohttps://media.geeksforgeeks.org/wp-con
 
 
 ## Step Two (Single Linked list)
+
+### resources :-
+> - [Mega Code](https://www.youtube.com/playlist?list=PLsGJzJ8SQXTeekVrjC0Nq3xGq1pXi6cQO) (Arabic)
+> - [Neso Academy](https://www.youtube.com/playlist?list=PLBlnK6fEyqRi3-lvwLGzcaquOs5OBTCww)
 
 Before Taking about linked list I will mention Important thing 
 > There are broadly two types of Data structures: Linear and Non-linear. Linear data structures are those in which every element is connected to the previous element and the elements are present at a single level.
@@ -171,6 +180,7 @@ Just like insertion, deletion also works in three different cases:
 
 
 ##### 1. Deletion from the beginning:
+
 It involves deleting the first node of the linked list.
 
 <img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/TechVidvan-Linked-list-normal-image04.jpg" alt="Delete from single linked list" width="800" height="400">
@@ -216,6 +226,13 @@ and here is a list of some problems I solved.
 
 
 ## Step Three (Double Linked list)
+
+### resources :-
+> - [Neso Academy](https://www.youtube.com/playlist?list=PLBlnK6fEyqRg7pacSDMgPn7vDVhz3N1uf)
+> - [Hard-Code](https://www.youtube.com/playlist?list=PLwCMLs3sjOY4UQq4vXgGPwGLVX1Y5faaS)**(Arabic)** [18-21]
+> - [Adel Nasim](https://www.youtube.com/watch?v=9xtRgr2V2mY&list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp&index=18&t=2s&pp=iAQB)**(Arabic)**
+
+
 In singly linked list We have single pointer pointing to the next node.<br>
 But a doubly linked list contains two pointers. One pointer points to the next node and one pointer to the previous node.<br>
 
