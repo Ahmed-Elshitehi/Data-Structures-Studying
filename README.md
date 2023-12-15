@@ -212,17 +212,18 @@ It is an easy case we can consider it like Deletion after a particular node.
 Now try to implement and solve some problems using linked list.
 
 and here is a list of some problems I solved.
+[take U forward](https://www.youtube.com/playlist?list=PLgUwDviBIf0rAuz8tVcM0AymmhTRsfaLU)
 
-| Problem  | Level | Solved | My code |
+| Problem  | Level | Solved | video |
 | ------------- | ------------- | ------------- | ------------- |
-| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)  | ${\color{green}Easy}$  |  ✅| |
-| [Palindrome Linked List ](https://leetcode.com/problems/palindrome-linked-list/)  | ${\color{green}Easy}$  |  ✅| |
-| [Merge Two Sorted Lists ](https://leetcode.com/problems/merge-two-sorted-lists/)  | ${\color{green}Easy}$  |  ✅| |
-| [Linked List Cycle ](https://leetcode.com/problems/linked-list-cycle/)  | ${\color{green}Easy}$  |  ✅| |
-| [Remove Nth Node From End of List ](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)  | ${\color{yellow}Medium}$  |  ✅| |
+| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)  | ${\color{green}Easy}$  |  ✅| [take U forward](https://www.youtube.com/watch?v=D2vI2DNJGd8&list=PLgUwDviBIf0rAuz8tVcM0AymmhTRsfaLU&index=10&pp=iAQB) |
+| [Palindrome Linked List ](https://leetcode.com/problems/palindrome-linked-list/)  | ${\color{green}Easy}$  |  ✅|  [take U forward](https://www.youtube.com/watch?v=lRY_G-u_8jk&list=PLgUwDviBIf0rAuz8tVcM0AymmhTRsfaLU&index=11&pp=iAQB) |
+| [Merge Two Sorted Lists ](https://leetcode.com/problems/merge-two-sorted-lists/)  | ${\color{green}Easy}$  |  ✅|  |
+| [Linked List Cycle ](https://leetcode.com/problems/linked-list-cycle/)  | ${\color{green}Easy}$  |  ✅| [take U forward](https://www.youtube.com/watch?v=wiOo4DC5GGA&list=PLgUwDviBIf0rAuz8tVcM0AymmhTRsfaLU&index=15) |
+| [Remove Nth Node From End of List ](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)  | ${\color{yellow}Medium}$  |  ✅|  [take U forward](https://www.youtube.com/watch?v=3kMKYQ2wNIU&list=PLgUwDviBIf0rAuz8tVcM0AymmhTRsfaLU&index=9&pp=iAQB) |
 | [Reorder List  ](https://leetcode.com/problems/reorder-list/)  | ${\color{yellow}Medium}$  |  ✅| |
-| [Add Two Numbers ](https://leetcode.com/problems/add-two-numbers/)  | ${\color{yellow}Medium}$  |  ✅| |
-| [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)  | ${\color{yellow}Medium}$  |  ✅| |
+| [Add Two Numbers ](https://leetcode.com/problems/add-two-numbers/)  | ${\color{yellow}Medium}$  |  ✅|  [take U forward](https://www.youtube.com/watch?v=XmRrGzR6udg&list=PLgUwDviBIf0rAuz8tVcM0AymmhTRsfaLU&index=6) |
+| [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/)  | ${\color{yellow}Medium}$  |  ✅|  [take U forward]() |
 
 
 ## Step Three (Double Linked list)
