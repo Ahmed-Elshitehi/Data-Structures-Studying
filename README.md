@@ -212,7 +212,6 @@ It is an easy case we can consider it like Deletion after a particular node.
 Now try to implement and solve some problems using linked list.
 
 and here is a list of some problems I solved.
-[take U forward](https://www.youtube.com/playlist?list=PLgUwDviBIf0rAuz8tVcM0AymmhTRsfaLU)
 
 | Problem  | Level | Solved | video |
 | ------------- | ------------- | ------------- | ------------- |
