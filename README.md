@@ -16,7 +16,8 @@ The first thing in every step I will recommend for you a resources to study from
 ## - [**Step Two (Single Linked list)**](#Step-Two-Single-Linked-list)✅
 ## - [**Step Three (Double Linked list)**](#Step-Three-Double-Linked-list)✅
 ## - [**Step Four (Stack)**](#Step-Four-Stack)⏳
-## - [**Step Five (Binary Tree)**](#Step-Five-Binary-Tree)⏳
+## - [**Step Five (Queue)**](#Step-Five-Queue)⏳
+## - [**Step six (Binary Tree)**](#Step-Five-Binary-Tree)⏳
 
 ## Step zero 
 
@@ -420,3 +421,10 @@ In a linked list, the last node points to NULL. if the stack is implemented usin
 | Problem  | Level | Solved | My code |
 | ------------- | ------------- | ------------- | ------------- |
 | [Min Stack](https://leetcode.com/problems/min-stack/description/)  | ${\color{yellow}Medium}$  |  ✅| |
+
+
+## Step Five (Queue)
+
+
+## Step Six (Binary Tree)
+
