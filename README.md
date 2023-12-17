@@ -428,3 +428,14 @@ In a linked list, the last node points to NULL. if the stack is implemented usin
 
 ## Step Six (Binary Tree)
 
+
+| Problem  | Level | Solved | video |
+| ------------- | ------------- | ------------- | ------------- |
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)  | ${\color{green}Easy}$  |  ✅| |
+| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)  | ${\color{green}Easy}$  |  ✅| |
+| [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)  | ${\color{green}Easy}$  |  ✅| |
+| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)  | ${\color{green}Easy}$  |  ✅| |
+| [Same Tree ](https://leetcode.com/problems/same-tree/)  | ${\color{green}Easy}$  |  ✅| |
+| [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/description/)  | ${\color{green}Easy}$  |  ✅| |
+| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)  | ${\color{yellow}Medium}$  |  ✅| |
+| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)  | ${\color{yellow}Medium}$  |  ✅| |
