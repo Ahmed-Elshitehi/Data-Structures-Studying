@@ -439,3 +439,4 @@ In a linked list, the last node points to NULL. if the stack is implemented usin
 | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/description/)  | ${\color{green}Easy}$  |  ✅| |
 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)  | ${\color{yellow}Medium}$  |  ✅| |
+| [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/)  | ${\color{yellow}Medium}$  |  ✅| |
