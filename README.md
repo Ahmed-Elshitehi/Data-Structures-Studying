@@ -409,12 +409,56 @@ In stack, we can perform insertion and deletion operations at only one end i.e. 
 
 We can implement stack using array or using linked list 
 
-We will talk about stack as linked list. ( Try to implement stack uaing array by yourself :) )
+### Array implementation of Stack 
+
+```cpp
+Stack {
+private:
+    static const int MAX_SIZE = 100; // Maximum size of the stack
+    int stackArray[MAX_SIZE];
+    int top = -1; // Index of the top element
+
+public:
+    Stack(); // Constructor
+    void push(int element); // Pushes an element onto the stack
+    int pop(); // Pops the top element from the stack
+    bool isEmpty(); // Checks if the stack is empty
+};
+```
+#### 1 - push operation
+
+To insert an element into the stack, we increment the top index and assign the element to the corresponding position in the stackArray.
+
+```cpp
+void Stack::push(int element) {
+    if (top == MAX_SIZE - 1) {
+        // Stack is full
+        cout << "Stack Overflow!" << endl;
+        return;
+    }
+    stackArray[++top] = element;
+}
+```
+#### 2- pop operation
+
+To remove the top element from the stack, we decrement the top index.
+
+```cpp
+void Stack::pop() {
+    if (top == -1) {
+        // Stack is empty
+        cout << "Stack Underflow!" << endl;
+    }
+}
+```
+
+### Linked List implementation of Stack 
 
 The linked list allocates memory dynamically. Thus, the stack will also have dynamic memory allocation.
 Since there is dynamic memory allocation, the use of heap comes into the picture.
 In the case of the linked list implementation, the stack will be considered full if the heap does not have enough space to create a new node.
-In a linked list, the last node points to NULL. if the stack is implemented using a linked list, its topmost node will point to NULL as well
+In a linked list, the last node points to NULL. if the stack is implemented using a linked list, its topmost node will point to NULL as well.
+
 
 <img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/Stack-normal-images04.jpg" alt="Stack">
 
