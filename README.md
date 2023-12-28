@@ -15,7 +15,7 @@ The first thing in every step I will recommend for you a resources to study from
 ## - [**Step One (vector)**](#Step-One-vector)✅
 ## - [**Step Two (Single Linked list)**](#Step-Two-Single-Linked-list)✅
 ## - [**Step Three (Double Linked list)**](#Step-Three-Double-Linked-list)✅
-## - [**Step Four (Stack)**](#Step-Four-Stack)⏳
+## - [**Step Four (Stack)**](#Step-Four-Stack)✅
 ## - [**Step Five (Queue)**](#Step-Five-Queue)⏳
 ## - [**Step Six (Binary Tree)**](#Step-Six-Binary-Tree)⏳
 
