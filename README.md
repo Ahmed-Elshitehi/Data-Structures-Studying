@@ -212,7 +212,7 @@ It is an easy case we can consider it like Deletion after a particular node.
 
 Now try to implement and solve some problems using linked list.
 
-and here is a list of some problems I solved.
+Problemset :
 
 | Problem  | Level | Solved | video |
 | ------------- | ------------- | ------------- | ------------- |
@@ -455,12 +455,32 @@ void Stack::pop() {
 ### Linked List implementation of Stack 
 
 The linked list allocates memory dynamically. Thus, the stack will also have dynamic memory allocation.
-Since there is dynamic memory allocation, the use of heap comes into the picture.
+Since there is dynamic memory allocation, heap use comes into the picture.
 In the case of the linked list implementation, the stack will be considered full if the heap does not have enough space to create a new node.
-In a linked list, the last node points to NULL. if the stack is implemented using a linked list, its topmost node will point to NULL as well.
-
+In a linked list, the last node points to NULL. if the stack is implemented using a linked list, its topmost node will also point to NULL.
 
 <img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/Stack-normal-images04.jpg" alt="Stack">
+
+In the stack Implementation, a stack contains a *head* pointer. where pushing and popping items happen at the head of the list. The first node has a null in the link field and second node-link has the first node address in the link field and so on and the last node address is in the “top” pointer.
+
+Push Operation:
+- Initialise a node
+- Update the value of that node by data i.e. node->data = data
+- Now link this node to the top of the linked list
+- And update top pointer to the current node
+
+Pop Operation:
+- First Check whether there is any node present in the linked list or not, if not then return
+- Otherwise make pointer let say temp to the top node and move forward the top node by 1 step
+- Now free this temp node
+
+Peek Operation:
+- Check if there is any node present or not, if not then return.
+- Otherwise return the value of top node of the linked list
+
+
+
+Problemset :
 
 | Problem  | Level | Solved | My code |
 | ------------- | ------------- | ------------- | ------------- |
@@ -472,6 +492,7 @@ In a linked list, the last node points to NULL. if the stack is implemented usin
 
 ## Step Six (Binary Tree)
 
+Problemset :
 
 | Problem  | Level | Solved | video |
 | ------------- | ------------- | ------------- | ------------- |
