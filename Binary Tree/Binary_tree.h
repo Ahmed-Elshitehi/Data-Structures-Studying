@@ -1,22 +1,30 @@
 #ifndef DATA_STRUCTURES_STUDYING_BINARY_TREE_H
 #define DATA_STRUCTURES_STUDYING_BINARY_TREE_H
-
+#include <iostream>
+#include <vector>
+#include <queue>
+using namespace std;
 class Binary_tree {
 private:
-    struct node{
+    struct TreeNode {
         int val;
-        node *left;
-        node *right;
-        node(int v):val(v),left(nullptr),right(nullptr){
+        TreeNode *left;
+        TreeNode *right;
+        TreeNode() : val(0), left(nullptr), right(nullptr) {
         }
-        node() {
-            node(0);
+        TreeNode(int x) : val(x), left(nullptr), right(nullptr) {
         }
-        ~node() = default;
+        TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {
+        }
     };
-    node root;
+    TreeNode *root;
+    void print_rec(TreeNode *p);
 public:
-
+    Binary_tree();
+    void print();
+    void add(vector<int> &nums, string &s);
+    void dfs(TreeNode *node);
+    void bfs(TreeNode *node);
 };
 
 
