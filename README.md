@@ -505,3 +505,4 @@ Problemset :
 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/)  | ${\color{yellow}Medium}$  |  ✅| |
+| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)  | ${\color{RED}Hard}$  |  ✅| |
