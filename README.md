@@ -492,7 +492,7 @@ Problemset :
 
 ## Step Six (Binary Tree)
 
-Problemset :
+$Problemset$ :
 
 | Problem  | Level | Solved | video |
 | ------------- | ------------- | ------------- | ------------- |
