@@ -48,3 +48,19 @@ bool BST::find(int &v) {
 bool BST::find(int &&v) {
     return find(v);
 }
+
+int BST::min_element() {
+    if (left) {
+        return left->min_element();
+    } else {
+        return val;
+    }
+}
+
+int BST::max_element() {
+    if (right) {
+        return right->max_element();
+    } else {
+        return val;
+    }
+}
