@@ -18,7 +18,7 @@ The first thing in every step I will recommend for you a resources to study from
 ## - [**Step Four (Stack)**](#Step-Four-Stack)✅
 ## - [**Step Five (Queue)**](#Step-Five-Queue)⏳
 ## - [**Step Six (Binary Tree)**](#Step-Six-Binary-Tree)⏳
-## - [**Step Seven (Binary Search Tree (BST))**](#Step-Seven-Binary-Search-Tree-(BST))⏳
+## - [**Step Seven (Binary Search Tree (BST))**](#Step-Seven-Binary-Search-Tree)⏳
 
 ## Step zero 
 
@@ -508,4 +508,4 @@ $Problemset$ :
 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)  | ${\color{RED}Hard}$  |  ✅| |
 
-## Step Seven (Binary Search Tree (BST))
+## Step Seven (Binary Search Tree)
