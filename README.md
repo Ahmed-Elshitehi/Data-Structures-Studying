@@ -509,3 +509,7 @@ $Problemset$ :
 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)  | ${\color{RED}Hard}$  |  ✅| |
 
 ## Step Seven (Binary Search Tree)
+
+| Problem  | Level | Solved | video |
+| ------------- | ------------- | ------------- | ------------- |
+| [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/description/)  | ${\color{green}Easy}$  |  ✅| |
