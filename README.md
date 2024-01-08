@@ -9,7 +9,7 @@ The first thing in every step I will recommend for you a resources to study from
 > - [Mega Code](https://www.youtube.com/playlist?list=PLsGJzJ8SQXTcsXRVviurGei0lf_t_I4D8)**(Arabic)**
 > - [Hard-Code](https://www.youtube.com/playlist?list=PLwCMLs3sjOY4UQq4vXgGPwGLVX1Y5faaS)**(Arabic)**
 > - [Adel Nasim](https://www.youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp)**(Arabic)**
-
+> - [Paul Programming](https://www.youtube.com/@PaulProgramming/playlists)
 
 ## - [**Step zero**](#Step-zero)✅
 ## - [**Step One (vector)**](#Step-One-vector)✅
