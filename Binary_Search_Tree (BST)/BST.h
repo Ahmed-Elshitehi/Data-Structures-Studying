@@ -15,8 +15,8 @@ public:
     void insert(int &&v);
     bool find(int &v);
     bool find(int &&v);
-    int min_element();
-    int max_element();
+    BST* min_element();
+    BST* max_element();
 };
 
 
