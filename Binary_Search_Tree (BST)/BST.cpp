@@ -4,10 +4,20 @@
 BST::BST(int v) {
     val = v;
     left = right = nullptr;
+    empty = false;
+    size = 1;
+}
+BST::BST() {
+    left = right = nullptr;
+    empty = true;
+    size = 0;
 }
 
 void BST::insert(int &v) {
-    if (v < val) {
+    if (empty) {
+        empty = false;
+        val = v;
+    } else if (v < val) {
         if (!left) {
             left = new BST(v);
         } else {
@@ -21,7 +31,6 @@ void BST::insert(int &v) {
         }
     }
 }
-
 void BST::insert(int &&v) {
     insert(v);
 }
@@ -45,6 +54,7 @@ bool BST::find(int &v) {
     }
     return false;
 }
+
 bool BST::find(int &&v) {
     return find(v);
 }
@@ -53,7 +63,7 @@ BST* BST::min_element() {
     if (left) {
         return left->min_element();
     } else {
-        return left;
+        return this;
     }
 }
 
@@ -61,6 +71,6 @@ BST* BST::max_element() {
     if (right) {
         return right->max_element();
     } else {
-        return right;
+        return this;
     }
 }
