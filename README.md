@@ -514,3 +514,4 @@ $Problemset$ :
 | Problem  | Level | Solved | video |
 | ------------- | ------------- | ------------- | ------------- |
 | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/description/)  | ${\color{green}Easy}$  |  ✅| |
+| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/)  | ${\color{yellow}Medium}$  |  ✅| |
