@@ -213,7 +213,7 @@ It is an easy case we can consider it like Deletion after a particular node.
 
 Now try to implement and solve some problems using linked list.
 
-Problemset :
+$Problemset$ (8) :
 
 | Problem  | Level | Solved | video |
 | ------------- | ------------- | ------------- | ------------- |
@@ -481,7 +481,7 @@ Peek Operation:
 
 
 
-Problemset :
+$Problemset$ (1) :
 
 | Problem  | Level | Solved | My code |
 | ------------- | ------------- | ------------- | ------------- |
@@ -493,7 +493,7 @@ Problemset :
 
 ## Step Six (Binary Tree)
 
-$Problemset$ :
+$Problemset$ (13) :
 
 | Problem  | Level | Solved | video |
 | ------------- | ------------- | ------------- | ------------- |
@@ -502,14 +502,21 @@ $Problemset$ :
 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)  | ${\color{green}Easy}$  |  ✅| |
 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)  | ${\color{green}Easy}$  |  ✅| |
 | [Same Tree ](https://leetcode.com/problems/same-tree/)  | ${\color{green}Easy}$  |  ✅| |
+| [Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)  | ${\color{green}Easy}$  |  ✅| |
 | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/description/)  | ${\color{green}Easy}$  |  ✅| |
 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/)  | ${\color{yellow}Medium}$  |  ✅| |
+| [Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/)  | ${\color{yellow}Medium}$  |  ✅| |
+| [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/description/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)  | ${\color{RED}Hard}$  |  ✅| |
 
+
 ## Step Seven (Binary Search Tree)
+
+$Problemset$ (2) :
 
 | Problem  | Level | Solved | video |
 | ------------- | ------------- | ------------- | ------------- |
 | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/description/)  | ${\color{green}Easy}$  |  ✅| |
+| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/)  | ${\color{yellow}Medium}$  |  ✅| |
