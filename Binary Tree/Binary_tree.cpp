@@ -59,3 +59,16 @@ void Binary_tree::bfs(Binary_tree::TreeNode *node) {
         queue.push(p->right);
     }
 }
+
+void Binary_tree::killer(Binary_tree::TreeNode *node) {
+    if (!node) {
+        return;
+    }
+    killer(node->left);
+    killer(node->right);
+    delete node;
+}
+
+Binary_tree::~Binary_tree() {
+    killer(root);
+}

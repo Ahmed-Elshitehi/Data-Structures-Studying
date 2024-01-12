@@ -19,12 +19,14 @@ private:
     };
     TreeNode *root;
     void print_rec(TreeNode *p);
+    void killer(TreeNode *node);
 public:
     Binary_tree();
     void print();
     void add(vector<int> &nums, string &s);
     void dfs(TreeNode *node);
     void bfs(TreeNode *node);
+    ~Binary_tree();
 };
 
 
