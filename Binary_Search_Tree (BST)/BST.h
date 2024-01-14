@@ -4,25 +4,21 @@
 
 
 class BST {
-
 private:
-    int val;
-    BST *left;
-    BST *right;
-    bool empty;
-    int size;
+    struct node {
+        int val;
+        node *left;
+        node *right;
+        node(int k) : val(k), left(nullptr), right(nullptr){
+        }
+    };
+    node* root;
 public:
-    BST(int v);
     BST();
-    void insert(int &v);
-    void insert(int &&v);
-    bool find(int &v);
-    bool find(int &&v);
-    BST* min_element();
-    BST* max_element();
-    int get_val(){
-        return val;
-    }
+    void insert();
+    void erase(int v);
+    void print();
+    ~BST();
 };
 
 
