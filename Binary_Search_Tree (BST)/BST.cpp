@@ -32,7 +32,7 @@ int BST::FindMin(BST::Node *node) {
 
 int BST::FindMax(BST::Node *node) {
     if (node->right) {
-        return FindMin(node->right);
+        return FindMax(node->right);
     } else {
         return node->val;
     }
