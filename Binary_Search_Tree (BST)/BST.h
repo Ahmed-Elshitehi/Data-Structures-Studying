@@ -12,13 +12,15 @@ private:
         Node(int k) : val(k), left(nullptr), right(nullptr){
         }
     };
-    Node* root;
+    Node *root;
     Node *add(Node *node, int &v);
 public:
     BST();
     void insert(int &v);
     void insert(int &&v);
     void erase(int v);
+    int FindMin(Node *node);
+    int FindMax(Node *node);
     void print();
     ~BST();
 };

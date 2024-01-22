@@ -21,3 +21,19 @@ BST::Node *BST::add(Node *node, int &v) {
     }
     return node;
 }
+
+int BST::FindMin(BST::Node *node) {
+    if (node->left) {
+        return FindMin(node->left);
+    } else {
+        return node->val;
+    }
+}
+
+int BST::FindMax(BST::Node *node) {
+    if (node->right) {
+        return FindMin(node->right);
+    } else {
+        return node->val;
+    }
+}
