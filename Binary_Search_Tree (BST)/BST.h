@@ -2,7 +2,7 @@
 #ifndef DATA_STRUCTURES_STUDYING_BST_H
 #define DATA_STRUCTURES_STUDYING_BST_H
 
-
+#include <iostream>
 class BST {
 private:
     struct Node {
@@ -12,8 +12,8 @@ private:
         Node(int k) : val(k), left(nullptr), right(nullptr){
         }
     };
-    Node *root;
     Node *add(Node *node, int &v);
+    Node *root;
 public:
     BST();
     void insert(int &v);
@@ -21,7 +21,9 @@ public:
     void erase(int v);
     int FindMin(Node *node);
     int FindMax(Node *node);
-    void print();
+    void Preorder(Node *node);
+    void Inorder(Node *node);
+    void Postorder(Node *node);
     ~BST();
 };
 
