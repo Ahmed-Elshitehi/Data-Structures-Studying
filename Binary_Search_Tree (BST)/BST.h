@@ -24,6 +24,7 @@ public:
     void Preorder(Node *node);
     void Inorder(Node *node);
     void Postorder(Node *node);
+    Node *GetRoot();
     ~BST();
 };
 

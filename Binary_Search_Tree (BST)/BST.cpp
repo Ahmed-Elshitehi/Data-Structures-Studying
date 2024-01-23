@@ -57,7 +57,15 @@ void BST::Inorder(BST::Node *node) {
 void BST::Postorder(BST::Node *node) {
     if (!node)
         return;
-    Preorder(node->left);
-    Preorder(node->right);
+    Postorder(node->left);
+    Postorder(node->right);
     std::cout << node->val << ' ';
+}
+
+BST::Node *BST::GetRoot() {
+    return root;
+}
+
+BST::~BST() {
+    std::cout << "\nEND\n";
 }
