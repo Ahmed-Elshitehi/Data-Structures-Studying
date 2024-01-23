@@ -22,20 +22,27 @@ BST::Node *BST::add(Node *node, int &v) {
     return node;
 }
 
-int BST::FindMin(BST::Node *node) {
+BST::Node *BST::_Min(Node *node) {
     if (node->left) {
-        return FindMin(node->left);
+        return _Min(node->left);
     } else {
-        return node->val;
+        return node;
+    }
+}
+BST::Node *BST::_Max(Node *node) {
+    if (node->left) {
+        return _Max(node->left);
+    } else {
+        return node;
     }
 }
 
-int BST::FindMax(BST::Node *node) {
-    if (node->right) {
-        return FindMax(node->right);
-    } else {
-        return node->val;
-    }
+int BST::FindMin() {
+    return _Min(root)->val;
+}
+
+int BST::FindMax() {
+    return _Max(root)->val;
 }
 
 void BST::Preorder(BST::Node *node) {
@@ -68,4 +75,39 @@ BST::Node *BST::GetRoot() {
 
 BST::~BST() {
     std::cout << "\nEND\n";
+}
+
+BST::Node *BST::_delete(BST::Node *node, int &v) {
+    if (!node) {
+        return node;
+    } else if (v > node->val) {
+        node->right = _delete(node->right, v);
+    } else if (v < node->val) {
+        node->left = _delete(node->left, v);
+    } else {
+        if (!node->left && !node->right) {
+            delete node;
+            node = nullptr;
+        } else if (!node->left) {
+            Node *temp = node;
+            node = node->right;
+            delete temp;
+        } else if (!node->right) {
+            Node *temp = node;
+            node = node->left;
+            delete temp;
+        } else {
+            Node *temp = _Min(node->right);
+            node->val = temp->val;
+            node->right = _delete(node->right, temp->val);
+        }
+    }
+    return node;
+}
+
+void BST::erase(int &v) {
+    root = _delete(root, v);
+}
+void BST::erase(int &&v) {
+    erase(v);
 }
