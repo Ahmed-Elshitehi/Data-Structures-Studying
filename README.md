@@ -493,7 +493,7 @@ $Problemset$ (1) :
 
 ## Step Six (Binary Tree)
 
-$Problemset$ (13) :
+$Problemset$ (14) :
 
 | Problem  | Level | Solved | video |
 | ------------- | ------------- | ------------- | ------------- |
@@ -506,6 +506,7 @@ $Problemset$ (13) :
 | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/description/)  | ${\color{green}Easy}$  |  ✅| |
 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)  | ${\color{yellow}Medium}$  |  ✅| |
+| [Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/description/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/)  | ${\color{yellow}Medium}$  |  ✅| |
 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/description/)  | ${\color{yellow}Medium}$  |  ✅| |
