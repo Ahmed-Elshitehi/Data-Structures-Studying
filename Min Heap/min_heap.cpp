@@ -15,3 +15,8 @@ void min_heap<T>::extend_cap() {
     swap(cur, arr);
     delete[]cur;
 }
+
+template<typename T>
+bool min_heap<T>::empty() {
+    return size == 0;
+}

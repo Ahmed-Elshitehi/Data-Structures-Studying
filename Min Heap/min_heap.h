@@ -10,9 +10,10 @@ private:
     void extend_cap();
 public:
     min_heap();
+    const int &top() const;
+    void pop();
+    void push(int &v);
+    void push(int &&v);
+    bool empty();
 };
-
-
-
-
 #endif
