@@ -8,6 +8,10 @@ private:
     int size;
     int cap;
     void extend_cap();
+    int get_parent(int pos);
+    int get_left_child(int pos);
+    int get_right_child(int pos);
+    void heapify_up(int ch_pos);
 public:
     min_heap();
     const int &top() const;
