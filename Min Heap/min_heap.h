@@ -12,6 +12,7 @@ private:
     int get_left_child(int pos);
     int get_right_child(int pos);
     void heapify_up(int ch_pos);
+    void heapify_down(int parent_pos);
 public:
     min_heap();
     const int &top() const;
@@ -20,4 +21,7 @@ public:
     void push(int &&v);
     bool empty();
 };
+
+
+
 #endif
